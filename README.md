@@ -1,6 +1,8 @@
 # DailyWallpaper
 ## Daily desktop wallpaper featuring random Halo concept art, current weather, and joke
 
+![Example Image](ExampleWallpaperImage.png)
+
 ### How To Use
 1. Clone this repository
 2. Install necessary site-packages

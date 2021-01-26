@@ -1,5 +1,5 @@
 # DailyDesktopWallpaper
-## Python script that generates a desktop wallpaper featuring random Halo concept art, the current weather, and a joke
+## Application that generates a desktop wallpaper featuring random Halo concept art, the current weather, and a joke
 
 ![Example Image](ExampleWallpaperImage.png)
 

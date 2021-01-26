@@ -1,5 +1,5 @@
 # DailyWallpaper
-## Python script that generates a desktop wallpaper featuring random Halo concept art, current weather, and joke
+## Python script that generates a desktop wallpaper featuring random Halo concept art, the current weather, and a joke
 
 ![Example Image](ExampleWallpaperImage.png)
 
@@ -8,6 +8,9 @@
 2. Install necessary site-packages
 3. (optional) Update .bat file to link to your Python environment and the cloned repository's directory
 4. (optional) Set the .bat file to run on startup ([Tutorial](https://www.sevenforums.com/tutorials/67503-task-create-run-program-startup-log.html))
+
+#### How To Change Location for Weather Forecast
+In the get_forecast_info function in the DailyWallpaper.py script, change the links to weather.com's url for your city's hourly weather.
 
 ### About The Project
 I created this program to demonstrate webscraping using Python.

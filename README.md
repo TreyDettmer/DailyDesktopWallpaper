@@ -1,10 +1,13 @@
 # DailyWallpaper
 ## Daily desktop wallpaper featuring random Halo concept art, current weather, and joke
 
+![Example Image](ExampleWallpaperImage.png)
+
 ### How To Use
 1. Clone this repository
 2. Install necessary site-packages
-3. Update .bat file to link to your Python environment and the cloned repository's directory
+3. (optional) Update .bat file to link to your Python environment and the cloned repository's directory
+4. (optional) Set the .bat file to run on startup ([Tutorial](https://www.sevenforums.com/tutorials/67503-task-create-run-program-startup-log.html))
 
 ### About The Project
 I created this program to demonstrate webscraping using Python.

@@ -54,7 +54,6 @@ def get_background_image():
     chosenSubCategory = random.choice(subcategories)
 
     subCategoryText = chosenSubCategory.find("a")["href"]
-
     artPageLink = "https://www.halopedia.org" + subCategoryText
     artPage = requests.get(artPageLink)
     soup = BeautifulSoup(artPage.content, 'html.parser')
@@ -65,7 +64,7 @@ def get_background_image():
     chosenImageIndex = random.randrange(0, len(allImages))
     chosenImageBasePage = requests.get(allImages[chosenImageIndex])
     soup = BeautifulSoup(chosenImageBasePage.content, 'html.parser')
-    imageLink = "https://www.halopedia.org" + soup.find(class_="fullMedia").find("a")["href"]
+    imageLink = soup.find(class_="fullMedia").find("a")["href"]
     chosenImage = Image.open(requests.get(imageLink, stream=True).raw)
 
     chosenImage = chosenImage.convert('RGB')

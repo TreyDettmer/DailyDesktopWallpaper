@@ -111,9 +111,9 @@ def get_forcast_info():
     for forecast in hourlyForecasts:
 
         # get the forecast info for this hour
-        timeOfDay = forecast.find(class_="DetailsSummary--daypartName--1Mebr").text.replace(" ", "")
-        temperature = forecast.find(class_="DetailsSummary--tempValue--RcZzi").text
-        description = forecast.find(class_="DetailsSummary--extendedData--aaFeV").text
+        timeOfDay = forecast.select("[class^=DetailsSummary--daypartName]")[0].text.replace(" ","")
+        temperature = forecast.select("[class^=DetailsSummary--tempValue]")[0].text
+        description = forecast.select("[class^=DetailsSummary--extendedData]")[0].text
         percentChance = forecast.select('span[data-testid="PercentageValue"]')[0].text
 
         # add this hour's forecast to the list of forecasts
